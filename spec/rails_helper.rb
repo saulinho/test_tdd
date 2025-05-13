@@ -38,6 +38,7 @@ RSpec.configure do |config|
 
   #devise
   config.include Devise::Test::ControllerHelpers, type: :controller
+  config.include Warden::Test::Helpers
   
   # factory_bot
   config.include FactoryBot::Syntax::Methods
