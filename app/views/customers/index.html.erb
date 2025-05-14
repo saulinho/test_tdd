@@ -14,3 +14,22 @@
 </div>
 
 <%= link_to "New customer", new_customer_path %>
+
+<br/>
+<a href="#" id="my-link">Add Message</a>
+<div id="my-div"></div>
+
+<script>
+  var $link = document.querySelector("#my-link");
+  $link.addEventListener('click', function(e){
+    e.preventDefault();
+    document.querySelector("#my-div").innerHTML = "<h1>Yes!</h1>";    
+  }, false)
+
+  // $link.addEventListener('click', function(e){
+  //   e.preventDefault();
+  //   setTimeout(function(){
+  //     document.querySelector("#my-div").innerHTML = "<h1>Yes!</h1>";
+  //   }, 1000);
+  // }, false)
+</script>
